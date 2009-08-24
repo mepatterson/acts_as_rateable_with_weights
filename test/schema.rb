@@ -13,6 +13,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.integer  :rateable_id
     t.integer  :user_id
     t.integer  :rating
+    t.integer  :weight
     t.datetime :created_at
   end
 

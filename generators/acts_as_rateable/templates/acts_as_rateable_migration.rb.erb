@@ -7,11 +7,12 @@ class <%= migration_name %> < ActiveRecord::Migration
       t.integer  :rateable_id
       t.integer  :user_id
       t.integer  :rating
+      t.integer  :weight
       t.datetime :created_at
     end
 
     add_index :ratings, [:rateable_type, :rateable_id, :user_id]
-    add_index :ratings, [:rateable_type, :rateable_id, :rating]
+    add_index :ratings, [:rateable_type, :rateable_id, :rating, :weight]
 
   end
 

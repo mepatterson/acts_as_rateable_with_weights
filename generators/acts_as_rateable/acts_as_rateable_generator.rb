@@ -7,7 +7,7 @@ class ActsAsRateableGenerator < Rails::Generator::Base
     @migration_name = "CreateRatings"
 
     record do |m|
-      m.migration_template 'acts_as_rateable_migration.rb.erb', File.join("db", "migrate"), { :migration_file_name => "create_ratings" }
+      m.migration_template 'acts_as_rateable_with_weights_migration.rb.erb', File.join("db", "migrate"), { :migration_file_name => "create_ratings" }
     end
 
   end

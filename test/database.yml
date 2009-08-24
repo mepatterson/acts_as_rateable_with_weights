@@ -1,16 +1,16 @@
 sqlite:
   :adapter: sqlite
-  :dbfile: vendor/plugins/acts_as_rateable/test/acts_as_rateable.sqlite.db
+  :dbfile: vendor/plugins/acts_as_rateable_with_weights/test/acts_as_rateable_with_weights.sqlite.db
 
 sqlite3:
   :adapter: sqlite3
-  :dbfile: vendor/plugins/acts_as_rateable/test/acts_as_rateable.sqlite3.db
+  :dbfile: vendor/plugins/acts_as_rateable_with_weights/test/acts_as_rateable_with_weights.sqlite3.db
 
 postgresql:
   :adapter: postgresql
   :username: postgres
   :password: postgres
-  :database: acts_as_rateable_test
+  :database: acts_as_rateable_with_weights_test
   :min_messages: ERROR
 
 mysql:
@@ -18,4 +18,4 @@ mysql:
   :host: localhost
   :username: root
   :password: password
-  :database: acts_as_rateable_test
+  :database: acts_as_rateable_with_weights_test
